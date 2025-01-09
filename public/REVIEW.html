@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="REVIEW.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+<style>
+    /* Add this style for the dialog box */
+    #dialogBox {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+</style>
+</head>
+
+
+<body>
+<div class="hero">
+
+    <div class="container">
+        <div class="navbar" id="main-section">
+            <img src="images/logo1.jpg" class="logo" href="styles.css">
+            <nav>
+                <ul>
+                    <li> <a href="index1.html" class="navbar-link" onclick="scrollToSection('top-of-page')" data-content="Home">Home</a> </li>
+                    <li>  <a href="index1.html" class="navbar-link" onclick="scrollToSection('about-us-section')" data-content="About Us">About Us</a> </li>
+                    <li>  <a href="index1.html" class="navbar-link" onclick="scrollToSection('team-section')" data-content="Our Team">Our Team</a> </li>
+                    <li>  <a href="index1.html" class="navbar-link" onclick="scrollToSection('contact-section')" data-content="Our Contact">Our Contact</a> </li>
+
+                    <li class="dropdown">
+                        <a href="#">Product</a>
+                        <div class="dropdown-content">
+                            <a href="SMARTAPPLIANCES.html">Smart Appliances</a>
+                            <a href="SMARTENTERTAINMENT.html">Smart Entertainment</a>
+                            <a href="SMARTLIGHTING.html">Smart Lighting</a>
+                            <a href="SMARTSECURITYSYSTEM.html">Smart Security System</a>
+                        </div>
+                    </li>
+                    <li><a href="REVIEW.html">Review</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1>COME, LET'S SHARE YOUR REVIEW WITH US !</h1>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <div class="row"> 
+                    
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                     <label for=""><i class="fa-solid fa-user"></i> Your Name</label>
+                </div>
+                <div class="input-group">
+                 <input type="text" id="number" required>
+                    <label for="number"><i class="fas fa-phone-square-alt"></i> Phone No</label>
+                </div>
+            </div>
+           
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email"><i class="fas fa-envelope"></i> Email Id</label>
+                </div>
+                <div class="input-group">
+                    <textarea name="message" rows="4" required></textarea>
+                    <label for="message"><i class="fas fa-envelope"></i> Your message</label>
+                </div>
+            <button type="submit"><i class="fas fa-paper-plane"></i> SUBMIT</button>
+        </form>
+    </div>
+
+<!-- Dialog Box -->
+<div id="dialogBox" style="display:none;">
+    <p>Thank you for sharing your</p>
+    <p>review with us</p>
+</div>
+
+<script>
+    function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        // Basic validation
+        if (name === "" || email === "" || message === "") {
+            alert("All fields must be filled out.");
+            return false;
+        }
+
+        // Email validation using a simple regular expression
+        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (!email.match(emailPattern)) {
+            alert("Invalid email address.");
+            return false;
+        }
+
+        // Show the success dialog and prevent form submission
+        showSuccessDialog();
+        return false; // Prevent form submission for this example
+    }
+
+    function showSuccessDialog() {
+        // Show the dialog box using jQuery
+        $("#dialogBox").fadeIn();
+
+        // Close the dialog box after a few seconds (3000 milliseconds in this example)
+        setTimeout(function() {
+            $("#dialogBox").fadeOut();
+        }, 3000);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Entertaiment</title>
+    <link rel="stylesheet" href="PRODUCT.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar" id="main-section">
+        <img src="images/logo2.jpg" class="logo" href="styles.css">
+        <nav>
+            <ul>
+                <li> <a href="index1.html" class="navbar-link" onclick="scrollToSection('top-of-page')" data-content="Home">Home</a> </li>
+                <li>  <a href="index1.html" class="navbar-link" onclick="scrollToSection('about-us-section')" data-content="About Us">About Us</a> </li>
+                <li>  <a href="index1.html" class="navbar-link" onclick="scrollToSection('team-section')" data-content="Our Team"> Our Team</a> </li>
+                <li>  <a href="index1.html" class="navbar-link" onclick="scrollToSection('contact-section')" data-content="Our Contact">Our Contact</a> </li>
+                <li class="dropdown">
+                    <a href="#">Product</a>
+                    <div class="dropdown-content">
+                        <a href="SMARTAPPLIANCES.html">Smart Appliances</a>
+                        <a href="SMARTENTERTAINMENT.html">Smart Entertainment</a>
+                        <a href="SMARTLIGHTING.html">Smart Lighting</a>
+                        <a href="SMARTSECURITYSYSTEM.html">Smart Security System</a>
+                    </div>
+                </li>
+                <li><a href="REVIEW.html">Review</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+        <!-- Where images slider were place inside main container -->
+        <div class="main-container">
+
+        <div class="slider">
+        <div class="list">
+        <div class="item">
+            <img src="images/se1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/se2.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/se3.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/se4.jpg" alt="">
+        </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+             <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        </div>
+
+        <!-- Adding main container2 which includes title, rating and description-->
+        <div class="main-container2">
+        <div class="title">
+            <h1>Smart Entertainment</h1>
+        </div>
+
+        <div class = "description">
+            <p>Transform your entertainment routine with simplicity and sophistication!
+                Our smart entertainment lineup brings the future to your living room effortlessly.
+                Whether you're streaming your favorite shows, diving into immersive gaming,
+                or discovering new music, our user-friendly devices redefine leisure with innovation and connectivity.
+               </p>
+        </div></div></div>
+        <div class="h2">
+            <h2>Customer Review</h>
+        </div>
+
+        <!-- Adding main container1 -->
+  
+        <div class="main-container1">
+
+        <!-- Outer Container 1 -->
+        <div class="outer-container">
+            <h2>Wan Ismail</h2>
+            <!-- Inner Container 1 inside Outer Container 1 -->
+        <div class="inner-container">
+            <p>Recently bought the Smart TV, and I'm loving it! The picture quality is stunning, and navigating through apps is a breeze.
+                The voice control feature is a game-changer.
+                The sleek design adds a modern touch to my living room. Definitely recommend for a fantastic home entertainment upgrade.
+                </p>
+        </div>
+        </div>
+
+        <!-- Outer Container 2 -->
+        <div class="outer-container">
+            <h2>Dennis Lam</h2>
+        <!-- Inner Container inside Outer Container 2 -->
+        <div class="inner-container">
+            <p>Just got the VR Play and it's mind-blowing!
+                The immersive experience is beyond words. Setup was easy, and the games are a blast. Comfortable fit, great visuals,
+                and a whole new level of gaming excitement. Highly recommend for anyone looking to dive into virtual reality.
+            </p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <br>
+        <br>
+
+    
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; since the beginning evolution. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+        <!-- JavaScript for slider -->
+    <script src="app.js"></script>
+</body>
+</html>

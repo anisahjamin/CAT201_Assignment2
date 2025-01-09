@@ -1,0 +1,47 @@
+.App-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:#c7ad2a;
+ }
+ 
+ /* Adds a CSS animation to rotate the background color */
+ /*@keyframes rotateBackgroundColor {
+   0% {
+     background-color: blue;
+  }
+   25% {
+     background-color: red;
+  }
+   50% {
+     background-color: yellow;
+  }
+   75% {
+     background-color: green;
+  }
+   100% {
+     background-color: blue;
+  }
+ }
+ 
+ /* Applies the animation to the header */
+ .App-header {
+  animation: rotateBackgroundColor 5s linear infinite;
+ }*/
+ 
+ /* Adds a CSS animation to rotate the logo */
+ /* Adds a CSS animation to rotate the logo */
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+ }
+  100% {
+    transform: rotate(360deg);
+ }
+}
+
+/* Applies the animation to the logo */
+.App-logo {
+ animation: rotateLogo 10s linear infinite; /* Change the duration of the animation */
+}

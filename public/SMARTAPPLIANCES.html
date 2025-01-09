@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Appliances</title>
+    <link rel="stylesheet" href="PRODUCT.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar" id="main-section">
+        <img src="images/logo2.jpg" class="logo" href="styles.css">
+        <nav>
+            <ul>
+                <li> <a href="index1.html" class="navbar-link" onclick="scrollToSection('top-of-page')" data-content="Home">Home</a> </li>
+                <li>  <a href="index1.html" class="navbar-link" onclick="scrollToSection('about-us-section')" data-content="About Us">About Us</a> </li>
+                <li>  <a href="index1.html" class="navbar-link" onclick="scrollToSection('team-section')" data-content="Our Team">Our Team</a> </li>
+                <li>  <a href="index1.html" class="navbar-link" onclick="scrollToSection('contact-section')" data-content="Our Contact">Our Contact</a> </li>
+                <li class="dropdown">
+                    <a href="#">Product</a>
+                    <div class="dropdown-content">
+                        <a href="SMARTAPPLIANCES.html">Smart Appliances</a>
+                        <a href="SMARTENTERTAINMENT.html">Smart Entertainment</a>
+                        <a href="SMARTLIGHTING.html">Smart Lighting</a>
+                        <a href="SMARTSECURITYSYSTEM.html">Smart Security System</a>
+                    </div>
+                </li>
+                <li><a href="REVIEW.html">Review</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!-- Where images slider were place inside main container -->
+    <div class="main-container">
+
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="images/sa1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="images/sa2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="images/sa3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="images/sa4.jpg" alt="">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev">></button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+
+        <!-- Adding main container2 which includes title, rating and description-->
+        <div class="main-container2">
+            <div class="title">
+                <h1>Smart Appliances</h1>
+            </div>
+
+            <div class = "description">
+                <p>Embrace a new era of convenience as you effortlessly control and manage your household appliances from anywhere at any time. Our smart appliances empower you with remote access, allowing you to monitor, adjust, and even initiate tasks through intuitive smartphone apps or voice-controlled assistants. Elevate Your Lifestyle to New Heights of Convenience, Efficiency, and Connectivity! </p>
+            </div></div></div>
+    <div class="h2">
+        <h2>Customer Review</h>
+    </div>
+    <!-- Adding main container1 -->
+    <div class="main-container1">
+
+        <!-- Outer Container 1 -->
+        <div class="outer-container">
+            <h2>Ahmad Shafiee Bujarimin</h2>
+            <!-- Inner Container 1 inside Outer Container 1 -->
+            <div class="inner-container">
+                <p>The Smart Oven has redefined cooking at home! The app controls are a lifesaver -
+                    preheat on my way home? Yes, please! The sleek design adds a modern touch to my kitchen,
+                    and the cooking precision is spot-on. This smart oven is a must-have for anyone who loves both tech and great food!
+                </p>
+            </div>
+        </div>
+
+        <!-- Outer Container 2 -->
+        <div class="outer-container">
+            <h2>Tuan Iqbal</h2>
+            <!-- Inner Container inside Outer Container 2 -->
+            <div class="inner-container">
+                <p>The  Smart Refrigerator is a game-changer! Love the convenience of
+                    checking contents from my phone and setting reminders. The sleek design fits perfectly in my kitchen.
+                    Efficient, spacious, and the smart features make life easier. A must-have for modern kitchens!</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<br>
+<br>
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; since the beginning evolution. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+<!-- JavaScript for slider -->
+<script src="app.js"></script>
+</body>
+</html>

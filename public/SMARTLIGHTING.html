@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Lighting</title>
+    <link rel="stylesheet" href="PRODUCT.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar" id="main-section">
+        <img src="images/logo2.jpg" class="logo" href="styles.css">
+        <nav>
+            <ul>
+                <li> <a href="index1.html" class="navbar-link" onclick="scrollToSection('top-of-page')" data-content="Home">Home</a> </li>
+                <li>  <a href="index1.html" class="navbar-link" onclick="scrollToSection('about-us-section')" data-content="About Us">About Us</a> </li>
+                <li>  <a href="index1.html" class="navbar-link" onclick="scrollToSection('team-section')" data-content="Our Team">Our Team</a> </li>
+                <li>  <a href="index1.html" class="navbar-link" onclick="scrollToSection('contact-section')" data-content="Our Contact">Our Contact</a> </li>
+                <li class="dropdown">
+                    <a href="#">Product</a>
+                    <div class="dropdown-content">
+                        <a href="SMARTAPPLIANCES.html">Smart Appliances</a>
+                        <a href="SMARTENTERTAINMENT.html">Smart Entertainment</a>
+                        <a href="SMARTLIGHTING.html">Smart Lighting</a>
+                        <a href="SMARTSECURITYSYSTEM.html">Smart Security System</a>
+                    </div>
+                </li>
+                <li><a href="REVIEW.html">Review</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <br>
+        <!-- Where images slider were place inside main container -->
+        <div class="main-container">
+
+        <div class="slider">
+        <div class="list">
+        <div class="item">
+            <img src="images/sl1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/sl2.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/sl3.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/sl4.jpg" alt="">
+        </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+             <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        </div>
+
+        <!-- Adding main container2 which includes title, rating and description-->
+        <div class="main-container2">
+        <div class="title">
+            <h1>Smart Lighting</h1>
+        </div>
+
+        <div class = "description">
+            <p>Brighten your home effortlessly with our smart lighting!
+                Control the mood with a tap or voice command, customize colors, and schedule lighting to fit your day.
+                Save energy with easy automation and manage lights from anywhere using our simple app.
+                Upgrade to smart lighting for a home that's always bright and welcoming—where simplicity meets brilliance!</p>
+        </div></div></div>
+
+                             <div class="h2">
+            <h2>Customer Review</h>
+        </div>
+        <!-- Adding main container1 -->
+        <div class="main-container1">
+
+        <!-- Outer Container 1 -->
+        <div class="outer-container">
+            <h2>Khairin Chan</h2>
+            <!-- Inner Container 1 inside Outer Container 1 -->
+        <div class="inner-container">
+            <p>The Smart Lighting has transformed my home! Effortless control through my phone, vibrant colors,
+                and mood-setting scenes. Super easy setup,
+                and the energy efficiency is a bonus. A game-changer for creating the perfect ambiance. Highly recommend!!!
+                </p>
+        </div>
+        </div>
+
+        <!-- Outer Container 2 -->
+        <div class="outer-container">
+            <h2>Joyce H</h2>
+        <!-- Inner Container inside Outer Container 2 -->
+        <div class="inner-container">
+            <p>The Smart Lighting system is fantastic!
+                Effortless control via my phone, customizable scenes, and the ability to set schedules—pure magic.
+                It adds a whole new level of ambiance to my home.
+                Easy to set up, energy-efficient, and a must-have for anyone wanting to transform their space.
+            </p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <br>
+        <br>
+
+    
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; since the beginning evolution. All rights reserved.</p>
+            </div>
+        </footer>
+
+        
+
+        <!-- JavaScript for slider -->
+    <script src="app.js"></script>
+</body>
+</html>
